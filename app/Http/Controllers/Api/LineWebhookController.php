@@ -43,16 +43,16 @@ class LineWebhookController extends Controller
                       $reply_token = $event->getReplyToken(); // 返信用トークン
 
                       // QRコード作成
-                      $filename = Str::random() .'.png';
-                      $path = public_path('qr_code/'. $filename);
-                      $qrCode = new QrCode($text);
-                      $qrCode->writeFile($path);
+                      //$filename = Str::random() .'.png';
+                      //$path = public_path('qr_code/'. $filename);
+                      //$qrCode = new QrCode($text);
+                      //$qrCode->writeFile($path);
 
                       // 画像メッセージで返信
-                      $url = url('qr_code/'. $filename);
-                      $replying_message = new ImageMessageBuilder(
-                          $url,
-                          $url
+                      //$url = url('qr_code/'. $filename);
+                      //$replying_message = new ImageMessageBuilder(
+                          //$url,
+                          //$url
                       );
                       $bot->replyMessage($reply_token, $replying_message);
 
