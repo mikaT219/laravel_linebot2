@@ -53,7 +53,7 @@ class LineWebhookController extends Controller
                       //$replying_message = new ImageMessageBuilder(
                           //$url,
                           //$url
-                      );
+                      //);
                       $bot->replyMessage($reply_token, $replying_message);
 
                   }
