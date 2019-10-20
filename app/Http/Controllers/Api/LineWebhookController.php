@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-Log::info(‘ログ出力テスト’);
+//Log::info(‘ログ出力テスト’);
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use LINE\LINEBot;
