@@ -1,8 +1,8 @@
 <?php
 
-use Log;//一番上でね
 namespace App\Http\Controllers\Api;
 //Log::info(‘ログ出力テスト’);
+use Log;//一番上でね
 Log::debug($data);
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
