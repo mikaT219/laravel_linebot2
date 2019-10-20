@@ -54,7 +54,7 @@ class LineWebhookController extends Controller
                           //$url,
                           //$url
                       //);
-                      $bot->replyMessage($reply_token, $replying_message);
+                      $bot->replyMessage($reply_token, "ハロー");
 
                   }
 
